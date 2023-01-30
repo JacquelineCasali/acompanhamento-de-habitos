@@ -1,0 +1,33 @@
+
+
+rodar servidor e mostar na tela
+entra na pasta na pasta SERVER (com o comando ls para achar a pasta e depois 
+cd espaço o nome da pasta
+depois escreve ( npm run dev)
+
+cria atualiza banco de dados
+npx prisma migrate dev cria/ atualiza o banco de dados
+para abrir o banco de dados no terminal digita 
+npx prisma studio
+
+
+#blibliotecas instaladas
+node_modules
+npm init -y
+npm install
+npm install typscripty -D
+npx tsc --init
+npm i tsx -D
+npm i -D prisma
+npm i @prisma/client
+npx prisma init --datasource-provider SQLite
+npx prisma migrate dev cria o banco de dados
+
+npx prisma studio roda o banco de dados 
+abrindo no navegador interfaçe para navegar 
+no banco de dados
+
+npm i @fastify/cors mostra a aplicação no front-end
+npm create vite@latest
+
+
