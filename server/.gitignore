@@ -1,0 +1,35 @@
+node_modules
+
+# para rodar o projeto 
+npm run dev
+
+#roda o banco de dados
+npx prisma studio 
+
+
+#bibliotecas instaladas /dpedencias dos projetos
+
+npm init -y
+
+npm i fastify
+ npm install typescript -D
+ npx tsc --init 
+ npm i tsx -D
+# cpmsumir o dados da aplicação back endo no front end 
+npm i @fastify/cors mostra a aplicação no front-end
+npm create vite@latest
+
+#banco de dados utilizando o prisma
+npm i -D prisma 
+npm i @prisma/client
+npx prisma init --datasource-provider SQLite (arquivo local de banco de dados)
+
+Gerador de Diagrama de Relacionamento de Entidade Prisma
+npm i -D prisma-erd-generator @mermaid-js/mermaid-cli
+
+npx prisma migrate dev cria o arquivo do banco de dados
+
+npx prisma studio roda o banco de dados
+
+
+
