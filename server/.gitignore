@@ -5,7 +5,7 @@ npm run dev
 
 #roda o banco de dados
 npx prisma studio 
-
+npx prisma db seed cria elementos
 
 #bibliotecas instaladas /dpedencias dos projetos
 
