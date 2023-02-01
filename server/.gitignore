@@ -4,9 +4,8 @@ node_modules
 npm run dev
 
 #roda o banco de dados
-npx prisma studio 
 npx prisma db seed cria elementos
-
+npx prisma studio 
 #bibliotecas instaladas /dpedencias dos projetos
 
 npm init -y
@@ -15,6 +14,7 @@ npm i fastify
  npm install typescript -D
  npx tsc --init 
  npm i tsx -D
+ npm i zod
 # cpmsumir o dados da aplicação back endo no front end 
 npm i @fastify/cors mostra a aplicação no front-end
 npm create vite@latest
@@ -31,5 +31,6 @@ npx prisma migrate dev cria o arquivo do banco de dados
 
 npx prisma studio roda o banco de dados
 
-
+# biblioteca de datas
+npm i dayjs
 
