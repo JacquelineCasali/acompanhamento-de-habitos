@@ -12,5 +12,5 @@ app
     port: 3333,
   })
   .then(() => {
-    console.log("Http Serve running http://localhost:3333/day");
+    console.log("Http Serve running http://localhost:3333");
   });
