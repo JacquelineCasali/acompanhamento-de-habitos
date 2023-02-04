@@ -40,3 +40,13 @@ tailwindcss
 
 #biblioteca de icones 
 npm i phosphor-react
+
+#biblioteca de acessibilidade
+# https://www.radix-ui.com/docs/primitives/overview/introduction
+
+npm install @radix-ui/react-dialog
+
+# https://www.radix-ui.com/docs/primitives/components/popover
+
+npm install @radix-ui/react-popover
+npm i clsx (classe condicionais )
