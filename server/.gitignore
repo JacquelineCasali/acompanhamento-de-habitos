@@ -6,6 +6,7 @@ npm run dev
 #roda o banco de dados
 npx prisma db seed cria elementos
 npx prisma studio 
+
 #bibliotecas instaladas /dpedencias dos projetos
 
 npm init -y
@@ -15,6 +16,11 @@ npm i fastify
  npx tsc --init 
  npm i tsx -D
  npm i zod
+ npm install @radix-ui/react-popover (quadrados)
+
+#  https://www.radix-ui.com/docs/primitives/components/checkbox
+ npm install @radix-ui/react-checkbox 
+
 # cpmsumir o dados da aplicação back endo no front end 
 npm i @fastify/cors mostra a aplicação no front-end
 npm create vite@latest
