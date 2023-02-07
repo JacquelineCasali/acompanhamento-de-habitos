@@ -1,3 +1,4 @@
+.gitignore
 # roda o servidor
 npm run dev
 

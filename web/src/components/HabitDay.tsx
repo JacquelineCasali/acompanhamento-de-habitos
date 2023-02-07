@@ -68,7 +68,7 @@ export function HabitDay({ completed = 0, amount = 0, date }: HabitDayProps) {
               </div>
 
               <span className="font-semibold text-xl text-white leading-tight  group-data-[state=checked]:line-through group-data-[state=checked]:text-zinc-400">
-                Beber 2l de agua
+                Dormir
               </span>
             </Checkbox.Root>
 
@@ -81,7 +81,7 @@ export function HabitDay({ completed = 0, amount = 0, date }: HabitDayProps) {
               </div>
 
               <span className="font-semibold text-xl text-white leading-tight  group-data-[state=checked]:line-through group-data-[state=checked]:text-zinc-400">
-                Beber 2l de agua
+                Jogar
               </span>
             </Checkbox.Root>
           </div>

@@ -22,16 +22,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#09090A"
-      },
-      "package": "com.jac.mobile"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "9ca55a7a-eff6-44ab-838e-31a42725683f"
-      }
     }
   }
 }

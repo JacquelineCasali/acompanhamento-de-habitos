@@ -1,8 +1,7 @@
 import { api } from "../lib/axios";
 import { generateDatesFromYearBeginning } from "../utils/generate-dates-from-year-beginning";
 import { HabitDay } from "./HabitDay";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import dayjs from "dayjs";
 const weekDay = ["D", "S", "T", "Q", " Q", "S", "S"];
 const SummaryDates = generateDatesFromYearBeginning();
@@ -18,11 +17,11 @@ type Summary = Array<{
 
 export function SummaryTable() {
   // fazer a chamada da API uma unica vez
-  const [summary, setsummary] = useState<Summary>([]);
+  const [summary, setSummary] = useState<Summary>([]);
 
   useEffect(() => {
     api.get("summary").then((response) => {
-      setsummary(response.data);
+      setSummary(response.data);
     });
   }, []);
 
