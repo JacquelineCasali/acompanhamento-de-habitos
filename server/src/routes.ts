@@ -1,25 +1,18 @@
-import dayjs from "dayjs";
 import { FastifyInstance } from "fastify";
-import { z } from "zod";
 import { prisma } from "./lib/prisma";
-
-// // Método HTTP: get, Post , Put, Patch,Delete
-// // get busca informação  (traz lista)
-// // post cria alguma coisa,
-// // put atualiza  alguma recurso por completo
-// // patch atualiza  alguma recurso especifico
-// // delete deleta algum recurso
-
-// // rota de criação do novo habito
+import { z } from "zod";
+import dayjs from "dayjs";
 export async function appRoutes(app: FastifyInstance) {
   app.post("/habits", async (request) => {
+    // validação
     const createHabitBody = z.object({
       title: z.string(),
       weekDays: z.array(z.number().min(0).max(6)),
     });
-
+    // title e dia da semana
     const { title, weekDays } = createHabitBody.parse(request.body);
 
+    // com biblioteca de datas
     const today = dayjs().startOf("day").toDate();
 
     await prisma.habit.create({
@@ -37,6 +30,7 @@ export async function appRoutes(app: FastifyInstance) {
     });
   });
 
+  //  rota do dia
   app.get("/day", async (request) => {
     const getDayParams = z.object({
       date: z.coerce.date(),
@@ -65,12 +59,12 @@ export async function appRoutes(app: FastifyInstance) {
         date: parsedDate.toDate(),
       },
       include: {
-        dayHabit: true,
+        dayHabits: true,
       },
     });
 
     const completedHabits =
-      day?.dayHabit.map((dayHabit) => {
+      day?.dayHabits.map((dayHabit) => {
         return dayHabit.habit_id;
       }) ?? [];
 
@@ -79,6 +73,9 @@ export async function appRoutes(app: FastifyInstance) {
       completedHabits,
     };
   });
+
+  // completar e não completar um habito
+
   app.patch("/habits/:id/toggle", async (request) => {
     const toggleHabitParams = z.object({
       id: z.string().uuid(),

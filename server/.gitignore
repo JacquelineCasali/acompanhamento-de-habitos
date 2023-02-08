@@ -12,10 +12,13 @@ npx prisma studio
 
 npm init -y
 
-npm i fastify
+npm i fastify instala o node node_modules
  npm install typescript -D
  npx tsc --init 
- npm i tsx -D
+npm i tsx -D
+ npm i @fastify/cors integra o back and com front end
+ 
+
  npm i zod
  npm install @radix-ui/react-popover (quadrados)
 
